@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     background-color: #ff3374 !important;
 }
 .navbar-brand{
@@ -28,6 +28,7 @@
 .form-control:focus{
     border-color: #ff3374;
    /* color: #ff3374;*/
+/*    
 box-shadow: 0 0 0 0.2rem rgba(255, 51, 116, 0.25) !important;
 }
 
@@ -53,8 +54,8 @@ box-shadow: 0 0 0 0.2rem rgba(255, 51, 116, 0.25) !important;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* vertical center */
-    align-items: center;       /* horizontal center */
+    justify-content: center;  
+    align-items: center;       
 }
 
 
@@ -116,4 +117,190 @@ box-shadow: 0 0 0 0.2rem rgba(255, 51, 116, 0.25) !important;
     justify-content: space-between;
     align-items: center;
 }
+ 
+/* ===== GLOBAL THEME ===== */
+body {
+    background: #0b0b10;
+    font-family: "Segoe UI", sans-serif;
+    color: #eaeaea;
+}
 
+/* ===== NAVBAR ===== */
+.navbar {
+    background: linear-gradient(90deg, #6a0dad, #1a1a1f) !important;
+    box-shadow: 0 4px 20px rgba(106, 13, 173, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #c084fc !important;
+}
+
+
+#title-text{
+    color: white;
+}
+
+#desc-text{
+    color: white;
+}
+/* ===== CARDS ===== */
+.card {
+    background: #12121a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card-header {
+    background: transparent !important;
+    color: #c084fc !important;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+    border: none;
+    color: white;
+    width: 120px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ===== INPUT FIELDS ===== */
+.form-control {
+    background: #0f0f16;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background: #0f0f16;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.25);
+    color: white;
+}
+
+/* ===== IMAGE SECTION ===== */
+.images img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.15);
+    border-color: #7c3aed;
+    cursor: pointer;
+}
+
+.selectedImg {
+    border-color: #c084fc !important;
+}
+
+/* FULL SCREEN CENTER */
+.enter {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0b10;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 320px;
+    padding: 30px;
+    background: #12121a;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    text-align: center;
+}
+
+/* INPUTS */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #0f0f16;
+    color: white;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 10px rgba(124,58,237,0.3);
+}
+
+/* BUTTON */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.4);
+}
+
+/* ===== TABLE ACTION BUTTONS ===== */
+.edit-btn {
+    background: #f59e0b;
+    color: black;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.edit-btn:hover {
+    background: #d97706;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+/* ===== HEADER ALIGNMENT ===== */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
